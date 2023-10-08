@@ -9,6 +9,7 @@ import Lawyer from "../components/Lawyer";
 import Ulogin from '../components/Ulogin';
 import Onboarding from '../components/Onboarding';
 import Userpage from '../components/Userpage';
+<<<<<<< HEAD
 import Child from '../components/slider/Child'
 import Food from '../components/slider/Food'
 import Consumer from '../components/slider/Consumer'
@@ -16,6 +17,11 @@ import Human_rights from '../components/slider/Human_rights'
 import Marriage from '../components/slider/Marriage'
 import Motor_vehicle from '../components/slider/Motor_vehicle'
 import CarouselItem from '../components/carousel_slide/CarouselItem'
+=======
+import Splash from '../components/Splash';
+import { Provider } from 'react-redux';
+import Store from '../Context/Store';
+>>>>>>> 9eb779723c89699087da778668fe4cb2c741164e
 
 
 
@@ -24,8 +30,9 @@ const Stack=createNativeStackNavigator();
 const Appnavigation = () => {
   return (
    <NavigationContainer>
-
+    <Provider store={Store}>
     <Stack.Navigator screenOptions={{headerShown:false}}>
+<<<<<<< HEAD
         <Stack.Screen name='Logo' component={Logo} />
         <Stack.Screen name='Ulhome' component={Ulhome}/>
         <Stack.Screen name='User' component={User}/>
@@ -40,6 +47,22 @@ const Appnavigation = () => {
         <Stack.Screen name='Consumer' component={Consumer} />
         <Stack.Screen name='Marriage' component={Marriage} />
     </Stack.Navigator>
+=======
+  
+  <Stack.Screen name='Logo' component={Logo} />
+  <Stack.Screen name='Ulhome' component={Ulhome}/>
+
+  <Stack.Screen name='User' component={User}/>
+  <Stack.Screen name='Lawyer' component={Lawyer}/>
+  
+  <Stack.Screen name="Ulogin" component={Ulogin}/>
+  <Stack.Screen name='Splash' component={Splash}/>
+  <Stack.Screen name='Onboarding' component={Onboarding}/>
+  <Stack.Screen name='Userpage' component={Userpage}/>
+</Stack.Navigator>
+    </Provider>
+  
+>>>>>>> 9eb779723c89699087da778668fe4cb2c741164e
    </NavigationContainer>
   )
 }
