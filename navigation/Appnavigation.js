@@ -9,6 +9,13 @@ import Lawyer from "../components/Lawyer";
 import Ulogin from '../components/Ulogin';
 import Onboarding from '../components/Onboarding';
 import Userpage from '../components/Userpage';
+import Child from '../components/slider/Child'
+import Food from '../components/slider/Food'
+import Consumer from '../components/slider/Consumer'
+import Human_rights from '../components/slider/Human_rights'
+import Marriage from '../components/slider/Marriage'
+import Motor_vehicle from '../components/slider/Motor_vehicle'
+import CarouselItem from '../components/carousel_slide/CarouselItem'
 
 
 
@@ -26,6 +33,12 @@ const Appnavigation = () => {
         <Stack.Screen name="Ulogin" component={Ulogin}/>
         <Stack.Screen name='Onboarding' component={Onboarding}/>
         <Stack.Screen name='Userpage' component={Userpage}/>
+        <Stack.Screen name='Motor_vehicle' component={Motor_vehicle} />
+        <Stack.Screen name='Child' component={Child} />
+        <Stack.Screen name='Food' component={Food} />
+        <Stack.Screen name='Human_rights' component={Human_rights} />
+        <Stack.Screen name='Consumer' component={Consumer} />
+        <Stack.Screen name='Marriage' component={Marriage} />
     </Stack.Navigator>
    </NavigationContainer>
   )
