@@ -7,7 +7,7 @@ import axios from 'axios'
 const Chat = () => {
     const [messages, setMessages] =useState([])
 
-    const YOUR_CHATGPT_API_KEY='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'
+    const YOUR_CHATGPT_API_KEY='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'
     const handleSend= async (newMessages = []) =>{
         try{
             // Get the user message
