@@ -2,14 +2,20 @@ import { View, Text ,StyleSheet, Dimensions, SafeAreaView} from 'react-native'
 import React from 'react'
 import Swiper from 'react-native-onboarding-swiper';
 import LottieView from 'lottie-react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const {width,height}=Dimensions.get('window')
 const Onboarding = () => {
-    
+  const navigation=useNavigation();
+    const GoToHome=()=>{
+      navigation.navigate('Userpage')
+    }
   return (
 <SafeAreaView className="flex flex-row justify-center items-center">
 <View style={styles.wview}>
      <Swiper
+      onDone={GoToHome}
+      onSkip={GoToHome}
         bottomBarColor='E1FAFF'
         bottomBarHighlight={styles.bottom}
   pages={[

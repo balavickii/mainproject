@@ -8,6 +8,7 @@ import User from '../components/User';
 import Lawyer from "../components/Lawyer";
 import Ulogin from '../components/Ulogin';
 import Onboarding from '../components/Onboarding';
+import Userpage from '../components/Userpage';
 
 
 
@@ -24,6 +25,7 @@ const Appnavigation = () => {
         <Stack.Screen name='Lawyer' component={Lawyer}/>
         <Stack.Screen name="Ulogin" component={Ulogin}/>
         <Stack.Screen name='Onboarding' component={Onboarding}/>
+        <Stack.Screen name='Userpage' component={Userpage}/>
     </Stack.Navigator>
    </NavigationContainer>
   )
