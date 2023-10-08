@@ -7,9 +7,11 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import { NavigationContainer } from '@react-navigation/native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import MaterialCommunityIcons2 from 'react-native-vector-icons/Entypo'
+
 const Tab=createMaterialBottomTabNavigator();
 
 const Userpage = () => {
+ 
   return (
     <Tab.Navigator labeled={false} barStyle={{backgroundColor:'white',borderColor:'#EEF2F2',borderTopWidth:2}}  >
         <Tab.Screen name='Home' component={Home}
